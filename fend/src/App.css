@@ -1,0 +1,152 @@
+/* Global Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+/* Navbar */
+
+.nav {
+    width: 100%;
+    height: 10vh;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    padding: 0 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: lightgray;
+}
+
+
+/* Navigation Sections */
+
+.nav .category,
+.nav .dashboard,
+.nav .subcategory {
+    margin: 0 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav .category:hover,
+.nav .dashboard:hover,
+.nav .subcategory:hover {
+    color: lightgray;
+}
+
+
+/* Form Container */
+
+.formcon {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #deb887;
+}
+
+.form {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background-color: #6495ed;
+    color: white;
+    border-radius: 10px;
+}
+
+.form input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid gray;
+    background-color: transparent;
+    color: white;
+}
+
+.form input::placeholder {
+    color: brown;
+    font-size: 13px;
+}
+
+.msg {
+    color: red;
+    font-size: 15px;
+}
+
+
+/* Product Container */
+
+.prodcon {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #deb887;
+}
+
+.prod {
+    width: 90%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 15px;
+    background-color: #5f9ea0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pimg {
+    width: 150px;
+    height: 150px;
+}
+
+.pimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: gray;
+}
